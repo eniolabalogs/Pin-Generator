@@ -1,0 +1,10 @@
+y= eval(input("How many digits do you want for your pin: "))
+if y<4:
+    print("Too short")
+if y>8:
+    print("Too long")
+if 4<=y<=8:
+    for i in range (y):
+        from random import randint
+        x= randint (1,9)
+        print (x, end=" ")
